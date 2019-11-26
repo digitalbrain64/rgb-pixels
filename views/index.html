@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css"></link>
+    <!-- Latest compiled and minified CSS -->
+    <!-- jQuery library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">PopulerRGB</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container text-center">
+        <div class="container text-center">
+            <div class="container table-row" id="image-dialog-block">
+                <div>
+                    <form action="#">
+                        <label style="margin-bottom: 10px;" for="image-uploader" class="btn btn-primary">
+                            Upload an image
+                        </label>
+                        <input style="display: none;" id="image-uploader" type="file" name="pic" accept="image/*" onchange="readFile(this)"/>
+
+                    </form>
+                </div>
+                <img id="selected-image"/>
+            </div>
+        </div>
+        <div class="container">
+            <canvas id="canvas"> </canvas>
+            <button style="margin-top: 10px;" id="process-image" type="button" class="btn btn-success">Process image</button>
+        </div>
+        <div style="display: none;" id="loading-div" class="container">
+            <img id="loading-gif" src="images/ezgif-2-6d0b072c3d3f.gif" alt="" width="200px">
+        </div>
+        <div id="rgb-results" class="container" style="display: none;">
+            <div class="rgb-items-row">
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+</footer>
+<script src="main.js"></script>
+</html>

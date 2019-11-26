@@ -1,0 +1,43 @@
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0!important;
+}
+
+#selected-image{
+    width: 60%;
+    display: none;
+}
+#process-image{
+    display: none;
+}
+
+#canvas{
+    display: none;
+}
+
+#image-dialog-block{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px dashed cornflowerblue;
+}
+
+.colors, .rgb-items-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.rgb-items-row{
+    margin-top: 15px;
+}
+.rgb-items-row p{
+    padding: 5px;
+}
+
+.rgb-percentage-block{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
